@@ -3,7 +3,7 @@ This repo contains code regarding the yelp restaurant recommendation project. Th
 
 
 ### Architecture
-The overall architecure of this project is listed below. 
+The overall architecure of this project is shown below. 
 
 ![Project Architecture](/images/yelp.png)
 
