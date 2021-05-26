@@ -1,4 +1,7 @@
-## Data Processing of Yelp top store data set with pyspark script
+## Data Processing of Yelp Top Store Text File
+
+The purpose of this session is to run a pyspark script to process the yelp top store text file, and provision with the schema to contruct the tabular data   
+and save the preprocessing results to SqLite db. 
 
 ### Usage
 `spark-submit --driver-class-path ./jar/sqlite-jdbc-3.8.6.jar --jars ./jar/sqlite-jdbc-3.8.5.jar topstore_load.py ./sample_data/topStores.txt`
