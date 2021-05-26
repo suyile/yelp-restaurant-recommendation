@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<title>Stores Recommender System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+select {
+	background-repeat:no-repeat;
+	background-position: center;
+	width:25%;
+	padding:inherit;
+	margin-top:2%;
+	font-family:Cursive;
+	line-height:1;
+	border-radius:0;
+	background-color:#eef4d6;
+	color:#5d4794;
+	font-size:180%;
+	-webkit-appearance:none;
+	box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+	outline:none
+	position: relative;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.submit {
+	width:25%;
+	height:10%;
+	color:#fff;
+	margin-top:2%;
+	background-color:#74afd6;
+	font-size:180%;
+	font-weight:700
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+      <p class="w3-margin-left">Project of Group "Black Cat Detective"  </p>
+  </ul>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="http://blueribbonsushibar.com/img/enormousSushiPlatter.jpg" align="middle" alt="Sushi" width="1200" height="200" style="float">
+  <div class="w3-display-bottomleft w3-padding-xlarge w3-opacity">
+    <h1 class="w3-xxlarge">Stores Recommender System (Yelp Dataset Challenge)</h1>
+  </div>
+</header>
+
+<div class="wrapper">
+<form action="{% url 'recommend:rating' %}" method="get">
+     <select name="season" id="season" class="select">
+        <option value="">--- Choose Season From Here ---</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="autumn">Autumn</option>
+        <option value="winter">Winter</option>
+    </select>
+    <select name="city" id="city" class="select">
+        <option value="">--- Choose City From Here ---</option>
+        <option value="Edinburgh">Edinburgh</option>
+        <option value="Karlsruhe">Karlsruhe</option>
+        <option value="Montreal">Montreal</option>
+        <option value="Waterloo">Waterloo</option>
+        <option value="Pittsburgh">Pittsburgh</option>
+        <option value="Charlotte">Charlotte</option>
+        <option value="Urbana-Champaign">Urbana-Champaign</option>
+        <option value="Phoenix">Phoenix</option>
+        <option value="Las Vegas">Las Vegas</option>
+        <option value="Madison">Madison</option>
+    </select>
+
+    <input type="submit" value="submit" class="submit"/>
+</form>
+</div>
+
+<footer class="w3-bottom w3-center w3-light-grey w3-padding-1">
+  <p>Copyright&copy 2016 Black Cat Detective</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
